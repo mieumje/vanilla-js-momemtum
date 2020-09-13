@@ -30,8 +30,8 @@ function handleSubmit(event) {
 }
 
 function loadToDos() {
-  const toDos = localStorage.getItem(TODOS_LS);
-  if (toDos !== null) {
+  const loadedToDos = localStorage.getItem(TODOS_LS);
+  if (loadedToDos !== null) {
   }
 }
 
