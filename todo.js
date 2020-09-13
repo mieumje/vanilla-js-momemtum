@@ -7,7 +7,7 @@ const TODOS_LS = "toDos";
 const toDos = [];
 
 function deleteToDo(event) {
-  console.dir(event.target);
+  console.log(event.target.parentNode);
 }
 
 function saveToDos() {
