@@ -7,7 +7,9 @@ const TODOS_LS = "toDos";
 const toDos = [];
 
 function deleteToDo(event) {
-  console.log(event.target.parentNode);
+  const btn = event.target;
+  const li = btn.parentNode;
+  toDoList.removeChild(li);
 }
 
 function saveToDos() {
