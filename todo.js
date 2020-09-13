@@ -7,7 +7,7 @@ const TODOS_LS = "toDos";
 const toDos = [];
 
 function saveToDos() {
-  localStorage.setItem(TODOS_LS, toDos);
+  localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
 function paintToDo(text) {
