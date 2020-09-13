@@ -1,13 +1,14 @@
 const body = document.querySelector("body");
 
-function genRandom(){
-    const number;
-    return number
+const IMG_NUMBER = 3;
+
+function genRandom() {
+  const number = Math.floor(Math.random() * IMG_NUMBE);
+  return number;
 }
 
-function init(){
-
-    const randomNumber =
+function init() {
+  const randomNumber = genRandom();
 }
 
 init();
