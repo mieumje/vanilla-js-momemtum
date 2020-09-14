@@ -4,10 +4,14 @@ const COORDS = "coords";
 function getWeather(lat, lng) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
-  ).then(function (response) {
-    //JSON 데이터를 받을꺼니가 변수명을 json이라 선언
-    console.log(response.json());
-  });
+  )
+    .then(function (response) {
+      //JSON 데이터를 받을꺼니가 변수명을 json이라 선언
+      return response.json();
+    })
+    .then(function (json) {
+      console.log(json);
+    });
 }
 
 function saveCoords(coordsObj) {
